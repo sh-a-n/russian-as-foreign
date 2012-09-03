@@ -64,6 +64,15 @@
     for (UIImageView * filmImage in filmImages) {
         filmImage.image = [UIImage imageNamed:@"film.png"];
     }
+    
+    /*for (UIImageView * filmImage in filmImages) {
+        if ([filmImages indexOfObject:filmImage])
+        {
+            [filmImage setCenter:<#(CGPoint)#>
+        }
+    }*/
+
+            
     self.bigImages = [NSArray arrayWithObjects:bigImage1,bigImage2,bigImage3,bigImage4,bigImage5,bigImage6,bigImage7, nil];
     //for (int i=1; i<8; i++) {
     //    [self.bigImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"image%d.jpg",i]]];
