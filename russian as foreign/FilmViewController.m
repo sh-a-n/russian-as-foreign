@@ -65,8 +65,11 @@
         filmImage.image = [UIImage imageNamed:@"film.png"];
     }
     self.bigImages = [NSArray arrayWithObjects:bigImage1,bigImage2,bigImage3,bigImage4,bigImage5,bigImage6,bigImage7, nil];
+    //for (int i=1; i<8; i++) {
+    //    [self.bigImages addObject:[UIImage imageNamed:[NSString stringWithFormat:@"image%d.jpg",i]]];
+    //}
     for (UIImageView * bigImage in bigImages) {
-        bigImage.image = [UIImage imageNamed:@"pattern.png"];
+        bigImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"image%d.jpg",[bigImages indexOfObject:bigImage]+1]];
     }
     [bigImagesScroller setContentSize:CGSizeMake(1600, 152)];
     [filmImagesScroller setContentSize:CGSizeMake(480, 55)];
