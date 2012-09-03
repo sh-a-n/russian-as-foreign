@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6B4E8515F49505006E14FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4E8115F49505006E14FC /* InfoPlist.strings */; };
+		CE6B4E8615F49505006E14FC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4E8315F49505006E14FC /* ViewController.xib */; };
 		CE94FD8015ED4B0D00835CB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD7F15ED4B0D00835CB4 /* UIKit.framework */; };
 		CE94FD8215ED4B0D00835CB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD8115ED4B0D00835CB4 /* Foundation.framework */; };
 		CE94FD8415ED4B0D00835CB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD8315ED4B0D00835CB4 /* CoreGraphics.framework */; };
 		CE94FD9E15ED4B2600835CB4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD9C15ED4B2600835CB4 /* AudioToolbox.framework */; };
 		CE94FD9F15ED4B2600835CB4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD9D15ED4B2600835CB4 /* AVFoundation.framework */; };
 		CE94FE6115ED4D6900835CB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94FE3D15ED4D6900835CB4 /* AppDelegate.m */; };
-		CE94FE6215ED4D6A00835CB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE94FE3F15ED4D6900835CB4 /* InfoPlist.strings */; };
-		CE94FE6315ED4D6A00835CB4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94FE4115ED4D6900835CB4 /* ViewController.xib */; };
 		CE94FE6415ED4D6A00835CB4 /* FilmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94FE4415ED4D6900835CB4 /* FilmViewController.m */; };
 		CE94FE6515ED4D6A00835CB4 /* FilmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE94FE4515ED4D6900835CB4 /* FilmViewController.xib */; };
 		CE94FE6615ED4D6A00835CB4 /* GroupingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94FE4715ED4D6900835CB4 /* GroupingViewController.m */; };
@@ -90,6 +90,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE6B4E8215F49505006E14FC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE6B4E8415F49505006E14FC /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/ViewController.xib; sourceTree = "<group>"; };
 		CE94FD7B15ED4B0D00835CB4 /* russian as foreign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "russian as foreign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94FD7F15ED4B0D00835CB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE94FD8115ED4B0D00835CB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,8 +100,6 @@
 		CE94FD9D15ED4B2600835CB4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CE94FE3C15ED4D6900835CB4 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "russian as foreign/AppDelegate.h"; sourceTree = "<group>"; };
 		CE94FE3D15ED4D6900835CB4 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "russian as foreign/AppDelegate.m"; sourceTree = "<group>"; };
-		CE94FE4015ED4D6900835CB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		CE94FE4215ED4D6900835CB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ViewController.xib; sourceTree = "<group>"; };
 		CE94FE4315ED4D6900835CB4 /* FilmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilmViewController.h; path = "russian as foreign/FilmViewController.h"; sourceTree = "<group>"; };
 		CE94FE4415ED4D6900835CB4 /* FilmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilmViewController.m; path = "russian as foreign/FilmViewController.m"; sourceTree = "<group>"; };
 		CE94FE4515ED4D6900835CB4 /* FilmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FilmViewController.xib; path = "russian as foreign/FilmViewController.xib"; sourceTree = "<group>"; };
@@ -125,8 +125,6 @@
 		CE94FE5E15ED4D6900835CB4 /* TrainingSubMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TrainingSubMenuViewController.xib; path = "russian as foreign/TrainingSubMenuViewController.xib"; sourceTree = "<group>"; };
 		CE94FE5F15ED4D6900835CB4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "russian as foreign/ViewController.h"; sourceTree = "<group>"; };
 		CE94FE6015ED4D6900835CB4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "russian as foreign/ViewController.m"; sourceTree = "<group>"; };
-		CE94FE7D15ED4E5600835CB4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = "/Users/User/Desktop/projects/russian as foreign/russian as foreign/en.lproj/ru.lproj/ViewController.xib"; sourceTree = "<absolute>"; };
-		CE94FE7E15ED4E5600835CB4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = "/Users/User/Desktop/projects/russian as foreign/russian as foreign/en.lproj/ru.lproj/InfoPlist.strings"; sourceTree = "<absolute>"; };
 		CE94FE8015ED4EE900835CB4 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = audio.mp3; sourceTree = "<group>"; };
 		CE94FE8215ED4EE900835CB4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		CE94FE8415ED4EE900835CB4 /* abort.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = abort.png; sourceTree = "<group>"; };
@@ -202,6 +200,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE6B4E8015F49505006E14FC /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CE6B4E8115F49505006E14FC /* InfoPlist.strings */,
+				CE6B4E8315F49505006E14FC /* ViewController.xib */,
+			);
+			name = en.lproj;
+			path = "russian as foreign/en.lproj";
+			sourceTree = "<group>";
+		};
 		CE94FD7015ED4B0C00835CB4 = {
 			isa = PBXGroup;
 			children = (
@@ -232,24 +240,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CE94FE3E15ED4D6900835CB4 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				CE94FE3F15ED4D6900835CB4 /* InfoPlist.strings */,
-				CE94FE4115ED4D6900835CB4 /* ViewController.xib */,
-			);
-			name = en.lproj;
-			path = "russian as foreign/en.lproj";
-			sourceTree = "<group>";
-		};
 		CE94FE7615ED4D7300835CB4 /* russian as foreign */ = {
 			isa = PBXGroup;
 			children = (
+				CE6B4E8015F49505006E14FC /* en.lproj */,
 				CE94FE7A15ED4DC600835CB4 /* Training */,
 				CE94FE7915ED4DB400835CB4 /* Picture_word */,
 				CE94FE7815ED4DAA00835CB4 /* Grouping */,
 				CE94FE7715ED4D9800835CB4 /* Listening */,
-				CE94FE3E15ED4D6900835CB4 /* en.lproj */,
 				CE94FE7B15ED4DF400835CB4 /* MainView */,
 			);
 			name = "russian as foreign";
@@ -456,8 +454,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE94FE6215ED4D6A00835CB4 /* InfoPlist.strings in Resources */,
-				CE94FE6315ED4D6A00835CB4 /* ViewController.xib in Resources */,
 				CE94FE6515ED4D6A00835CB4 /* FilmViewController.xib in Resources */,
 				CE94FE6715ED4D6A00835CB4 /* GroupingViewController.xib in Resources */,
 				CE94FE6915ED4D6A00835CB4 /* ListeningViewController.xib in Resources */,
@@ -521,6 +517,8 @@
 				CE94FEF115ED4EE900835CB4 /* textback@2x.png in Resources */,
 				CE94FEF215ED4EE900835CB4 /* TimerBack.png in Resources */,
 				CE94FEF315ED4EE900835CB4 /* TimerBack@2x.png in Resources */,
+				CE6B4E8515F49505006E14FC /* InfoPlist.strings in Resources */,
+				CE6B4E8615F49505006E14FC /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,20 +545,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE94FE3F15ED4D6900835CB4 /* InfoPlist.strings */ = {
+		CE6B4E8115F49505006E14FC /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE94FE4015ED4D6900835CB4 /* en */,
-				CE94FE7E15ED4E5600835CB4 /* ru */,
+				CE6B4E8215F49505006E14FC /* ru */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CE94FE4115ED4D6900835CB4 /* ViewController.xib */ = {
+		CE6B4E8315F49505006E14FC /* ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE94FE4215ED4D6900835CB4 /* en */,
-				CE94FE7D15ED4E5600835CB4 /* ru */,
+				CE6B4E8415F49505006E14FC /* ru */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
