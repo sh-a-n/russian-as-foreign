@@ -14,6 +14,8 @@
     NSMutableArray * second;
     NSMutableArray * third;
     NSMutableArray * sourse;
+    NSMutableArray * choosed;
+    NSInteger index;
 }
 
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
@@ -37,6 +39,15 @@
 @property (nonatomic, retain) NSMutableArray * second;
 @property (nonatomic, retain) NSMutableArray * third;
 @property (nonatomic, retain) NSMutableArray * sourse;
+@property (nonatomic, retain) NSMutableArray * choosed;
+@property (weak, nonatomic) IBOutlet UITableView *MytableView;
+//@property (nonatomic, retain) NSInteger index;
 - (IBAction)abortButtonSelector:(id)sender;
+- (IBAction)firstGroupButton:(id)sender;
+- (IBAction)secondGroupButton:(id)sender;
+- (IBAction)thirdGroupButton:(id)sender;
+- (IBAction)RedButtonSelect:(id)sender;
+- (IBAction)BlueButtonSelect:(id)sender;
+- (IBAction)GreenButtonSelect:(id)sender;
 
 @end

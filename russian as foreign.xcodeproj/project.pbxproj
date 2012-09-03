@@ -643,7 +643,7 @@
 				CE94FD9815ED4B0D00835CB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		CE94FD9915ED4B0D00835CB4 /* Build configuration list for PBXNativeTarget "russian as foreign" */ = {
 			isa = XCConfigurationList;
@@ -652,7 +652,7 @@
 				CE94FD9B15ED4B0D00835CB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
