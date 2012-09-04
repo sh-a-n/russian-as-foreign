@@ -84,7 +84,7 @@
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="796140890">
 									<object class="NSCustomResource" key="IBUIImage">
 										<string key="NSClassName">NSImage</string>
-										<string key="NSResourceName">back_arrow.png</string>
+										<string key="NSResourceName">abort.png</string>
 									</object>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
@@ -233,7 +233,6 @@
 						<string key="NSFrame">{{0, 256}, {480, 44}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -662,8 +661,8 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="TimerBack.png">{70, 32}</string>
+			<string key="abort.png">{16, 16}</string>
 			<string key="arrow.png">{16, 16}</string>
-			<string key="back_arrow.png">{16, 16}</string>
 			<string key="play.png">{60, 65}</string>
 			<string key="repeat.png">{85, 60}</string>
 		</dictionary>

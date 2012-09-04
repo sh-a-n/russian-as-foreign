@@ -144,7 +144,7 @@
 
 - (void)singleTapGestureCaptured:(UITapGestureRecognizer *)gesture
 {
-    UIImageView * tappedView = [gesture.view hitTest:[gesture locationInView:gesture.view]  withEvent:nil];
+    UIImageView * tappedView = (UIImageView *)[gesture.view hitTest:[gesture locationInView:gesture.view]  withEvent:nil];
     if (tappedView.image == [UIImage imageNamed:@"film.png"]) {
         tappedView.image = choosedPicture;
         choosedPicture = [UIImage imageNamed:@"film.png"];
@@ -158,7 +158,7 @@
 
 - (void)singleTapGestureCapturedBig:(UITapGestureRecognizer *)gesture
 {
-    UIImageView * tappedView = [gesture.view hitTest:[gesture locationInView:gesture.view]  withEvent:nil];
+    UIImageView * tappedView = (UIImageView *)[gesture.view hitTest:[gesture locationInView:gesture.view]  withEvent:nil];
     choosedPicture = tappedView.image;
     //NSLog(@"Touch event on view: %@",[tappedView class]);
 }

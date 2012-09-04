@@ -21,7 +21,7 @@
 @synthesize filmViewController;
 @synthesize groupingViewController;
 @synthesize picture_wordViewController;
-@synthesize startData;
+@synthesize startDate;
 @synthesize navigationBarLabel;
 @synthesize navigationBar;
 @synthesize backButton;
@@ -138,7 +138,7 @@
 - (void)tick
 {
     NSDate *currentDate = [NSDate date];
-    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:startDate];
+    NSTimeInterval timeInterval = [currentDate timeIntervalSinceDate:(NSDate *)startDate];
     NSDate *timerDate = [NSDate dateWithTimeIntervalSince1970:timeInterval];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"mm:ss"];
