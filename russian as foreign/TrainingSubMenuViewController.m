@@ -10,6 +10,7 @@
 #import "ListeningViewController.h"
 #import "FilmViewController.h"
 #import "Picture_wordViewController.h"
+#import "Picture_word2ViewController.h"
 #import "GroupingViewController.h"
 #import "AccentViewController.h"
 #import "GrammaticViewController.h"
@@ -25,6 +26,7 @@
 @synthesize filmViewController;
 @synthesize groupingViewController;
 @synthesize picture_wordViewController;
+@synthesize picture_word2ViewController;
 @synthesize accentViewcontroller;
 @synthesize grammaticviewController;
 @synthesize associationViewController;
@@ -184,6 +186,7 @@
     listeningViewController.timerLabel.text = timeString;
     listeningViewController.filmViewController.timerLabel.text = timeString;
     picture_wordViewController.timerLabel.text = timeString;
+    picture_wordViewController.picture_word2ViewController.timerLabel.text = timeString;
     groupingViewController.timerLabel.text = timeString;
     punctuatonViewController.timerLabel.text = timeString;
     associationViewController.timerLabel.text = timeString;

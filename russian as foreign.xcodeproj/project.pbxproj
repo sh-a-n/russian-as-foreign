@@ -17,6 +17,8 @@
 		CE4724DF15FDC414005E733C /* AccentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4724DD15FDC414005E733C /* AccentViewController.xib */; };
 		CE6B4E8515F49505006E14FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4E8115F49505006E14FC /* InfoPlist.strings */; };
 		CE6B4E8615F49505006E14FC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4E8315F49505006E14FC /* ViewController.xib */; };
+		CE6B4EAA15FE06D4006E14FC /* Picture_word2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B4EA815FE06D4006E14FC /* Picture_word2ViewController.m */; };
+		CE6B4EAB15FE06D4006E14FC /* Picture_word2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EA915FE06D4006E14FC /* Picture_word2ViewController.xib */; };
 		CE94FD8015ED4B0D00835CB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD7F15ED4B0D00835CB4 /* UIKit.framework */; };
 		CE94FD8215ED4B0D00835CB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD8115ED4B0D00835CB4 /* Foundation.framework */; };
 		CE94FD8415ED4B0D00835CB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD8315ED4B0D00835CB4 /* CoreGraphics.framework */; };
@@ -120,6 +122,9 @@
 		CE4724DD15FDC414005E733C /* AccentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccentViewController.xib; path = "russian as foreign/AccentViewController.xib"; sourceTree = "<group>"; };
 		CE6B4E8215F49505006E14FC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE6B4E8415F49505006E14FC /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CE6B4EA715FE06D4006E14FC /* Picture_word2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Picture_word2ViewController.h; path = "russian as foreign/Picture_word2ViewController.h"; sourceTree = "<group>"; };
+		CE6B4EA815FE06D4006E14FC /* Picture_word2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Picture_word2ViewController.m; path = "russian as foreign/Picture_word2ViewController.m"; sourceTree = "<group>"; };
+		CE6B4EA915FE06D4006E14FC /* Picture_word2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Picture_word2ViewController.xib; path = "russian as foreign/Picture_word2ViewController.xib"; sourceTree = "<group>"; };
 		CE94FD7B15ED4B0D00835CB4 /* russian as foreign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "russian as foreign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94FD7F15ED4B0D00835CB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE94FD8115ED4B0D00835CB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -362,6 +367,9 @@
 				CE94FE4D15ED4D6900835CB4 /* Picture_wordViewController.h */,
 				CE94FE4E15ED4D6900835CB4 /* Picture_wordViewController.m */,
 				CE94FE4F15ED4D6900835CB4 /* Picture_wordViewController.xib */,
+				CE6B4EA715FE06D4006E14FC /* Picture_word2ViewController.h */,
+				CE6B4EA815FE06D4006E14FC /* Picture_word2ViewController.m */,
+				CE6B4EA915FE06D4006E14FC /* Picture_word2ViewController.xib */,
 			);
 			name = Picture_word;
 			sourceTree = "<group>";
@@ -619,6 +627,7 @@
 				CE4724D515FDC191005E733C /* AssociationViewController.xib in Resources */,
 				CE4724DA15FDC275005E733C /* GrammaticViewController.xib in Resources */,
 				CE4724DF15FDC414005E733C /* AccentViewController.xib in Resources */,
+				CE6B4EAB15FE06D4006E14FC /* Picture_word2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +652,7 @@
 				CE4724D415FDC191005E733C /* AssociationViewController.m in Sources */,
 				CE4724D915FDC275005E733C /* GrammaticViewController.m in Sources */,
 				CE4724DE15FDC414005E733C /* AccentViewController.m in Sources */,
+				CE6B4EAA15FE06D4006E14FC /* Picture_word2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

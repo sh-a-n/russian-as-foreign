@@ -12,6 +12,7 @@
 @class FilmViewController;
 @class GroupingViewController;
 @class Picture_wordViewController;
+@class Picture_word2ViewController;
 @class AccentViewController;
 @class GrammaticViewController;
 @class AssociationViewController;
@@ -27,6 +28,7 @@
 @property (strong, nonatomic) FilmViewController * filmViewController;
 @property (strong, nonatomic) GroupingViewController * groupingViewController;
 @property (strong, nonatomic) Picture_wordViewController * picture_wordViewController;
+@property (strong, nonatomic) Picture_word2ViewController * picture_word2ViewController;
 @property (strong, nonatomic) AccentViewController * accentViewcontroller;
 @property (strong, nonatomic) GrammaticViewController * grammaticviewController;
 @property (strong, nonatomic) AssociationViewController * associationViewController;

@@ -1,33 +1,31 @@
 //
-//  Picture_wordViewController.m
-//  русский как иностранный
+//  Picture_word2ViewController.m
+//  russian as foreign
 //
-//  Created by Lion User on 28.08.12.
+//  Created by Lion User on 10.09.12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Picture_wordViewController.h"
 #import "Picture_word2ViewController.h"
 
-@interface Picture_wordViewController ()
+@interface Picture_word2ViewController ()
 
 @end
 
-@implementation Picture_wordViewController
-@synthesize picture_word2ViewController;
+@implementation Picture_word2ViewController
+@synthesize navigationBar;
+@synthesize timerLabel;
+@synthesize timerBack;
+@synthesize backButton;
+@synthesize nextButton;
+@synthesize toolBar;
 @synthesize scrollView;
+@synthesize textField;
+@synthesize playButton;
+@synthesize imageArray;
 @synthesize swipeRightRecognizer;
 @synthesize swipeLeftRecognizer;
-@synthesize navigationBar;
-@synthesize backButton;
-@synthesize timerBack;
-@synthesize timerLabel;
-@synthesize toolBar;
-@synthesize imageArray;
 @synthesize imageNameArray;
-@synthesize wordLabel;
-@synthesize nextButton;
-@synthesize wordArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,7 +39,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     nextPage = 0;
     [timerBack setFrame:CGRectMake(0, 0, 58, 32)];
     [timerLabel setFrame:CGRectMake(0, 0, 58, 32)];
@@ -49,10 +46,7 @@
     [toolBar setFrame:CGRectMake(0, 245, 480, 55)];
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
     [toolBar setBackgroundImage:[UIImage imageNamed:@"tabBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
-    imageNameArray = [[NSArray alloc] initWithObjects:@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",@"image5.jpg", nil];
-    wordArray = [[NSArray alloc] initWithObjects:@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",@"image5.jpg", nil];
-    wordLabel.text = [wordArray objectAtIndex:0];
-    [scrollView setContentSize:CGSizeMake(246+imageNameArray.count*imageWidth, 161)];
+    [scrollView setContentSize:CGSizeMake(246+ imageNameArray.count*imageWidth, 161)];
     int x=127;
     for (NSString* name in imageNameArray)
     {
@@ -62,23 +56,23 @@
         [scrollView addSubview:imageViewLoc];
         x+=224;
     }
+
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
     [self setNavigationBar:nil];
-    [self setBackButton:nil];
-    [self setTimerBack:nil];
     [self setTimerLabel:nil];
+    [self setBackButton:nil];
+    [self setNextButton:nil];
     [self setToolBar:nil];
     [self setScrollView:nil];
+    [self setTextField:nil];
+    [self setPlayButton:nil];
+    [self setTimerBack:nil];
     [self setSwipeRightRecognizer:nil];
     [self setSwipeLeftRecognizer:nil];
-    [self setImageArray:nil];
-    [self setImageNameArray:nil];
-    [self setWordLabel:nil];
-    [self setWordArray:nil];
-    [self setNextButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -89,9 +83,10 @@
     return ((interfaceOrientation != UIInterfaceOrientationPortrait)&&(interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown));
 }
 
-- (IBAction)backButtonSelector:(id)sender {
+- (IBAction)backButtonSelect:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 - (IBAction)swipeRight:(id)sender {
     //UIImageView * image1 = [imageArray objectAtIndex:0];
     CGFloat contentOffset = scrollView.contentOffset.x - (imageWidth + 8);
@@ -99,7 +94,7 @@
     if (nextPage >=0)
     {
         [scrollView setContentOffset:CGPointMake(nextPage*(imageWidth+8), 0) animated:YES];
-        wordLabel.text = [wordArray objectAtIndex:nextPage];
+        //wordLabel.text = [wordArray objectAtIndex:nextPage];
     }
 }
 
@@ -110,19 +105,8 @@
     if (nextPage < imageNameArray.count)
     {
         [scrollView setContentOffset:CGPointMake(nextPage*(imageWidth+8), 0) animated:YES];
-        wordLabel.text = [wordArray objectAtIndex:nextPage];
+        //wordLabel.text = [wordArray objectAtIndex:nextPage];
     }
 }
 
-- (IBAction)playButton:(id)sender {
-    
-}
-
-- (IBAction)selectNextButton:(id)sender {
-    self.picture_word2ViewController = [[Picture_word2ViewController alloc]initWithNibName:@"Picture_word2ViewController" bundle:nil];
-    self.picture_word2ViewController.imageArray = self.imageArray;
-    self.picture_word2ViewController.imageNameArray = self.imageNameArray;
-    [self.navigationController pushViewController:picture_word2ViewController animated:YES];
-}
-    
 @end

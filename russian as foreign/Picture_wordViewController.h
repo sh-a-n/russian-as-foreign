@@ -10,6 +10,8 @@
 
 #define imageWidth 216
 
+@class Picture_word2ViewController;
+
 @interface Picture_wordViewController : UIViewController
 {
     int nextPage;
@@ -27,8 +29,11 @@
 @property (retain, nonatomic) NSArray *imageNameArray;
 @property (retain, nonatomic) NSArray *wordArray;
 @property (weak, nonatomic) IBOutlet UILabel *wordLabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextButton;
+@property (strong, nonatomic) Picture_word2ViewController *picture_word2ViewController;
 - (IBAction)swipeRight:(id)sender;
 - (IBAction)swipeLeft:(id)sender;
 - (IBAction)playButton:(id)sender;
+- (IBAction)selectNextButton:(id)sender;
 
 @end
