@@ -11,6 +11,10 @@
 #import "FilmViewController.h"
 #import "Picture_wordViewController.h"
 #import "GroupingViewController.h"
+#import "AccentViewController.h"
+#import "GrammaticViewController.h"
+#import "AssociationViewController.h"
+#import "PunctuationViewController.h"
 
 @interface TrainingSubMenuViewController ()
 
@@ -21,6 +25,10 @@
 @synthesize filmViewController;
 @synthesize groupingViewController;
 @synthesize picture_wordViewController;
+@synthesize accentViewcontroller;
+@synthesize grammaticviewController;
+@synthesize associationViewController;
+@synthesize punctuatonViewController;
 @synthesize startDate;
 @synthesize navigationBarLabel;
 @synthesize navigationBar;
@@ -125,6 +133,34 @@
                 self.groupingViewController = [[GroupingViewController alloc]initWithNibName:@"GroupingViewController" bundle:nil];
                 [self.navigationController pushViewController:groupingViewController animated:YES];
             }
+            else {
+                if (indexPath.row == [choosed indexOfObject:@"Пунктуация"]) {
+                    NSLog(@"Пунктуация");
+                    self.punctuatonViewController = [[PunctuationViewController alloc]initWithNibName:@"PunctuationViewController" bundle:nil];
+                    [self.navigationController pushViewController:punctuatonViewController animated:YES];
+                }
+                else {
+                    if (indexPath.row == [choosed indexOfObject:@"Ассоциации"]) {
+                        NSLog(@"Ассоциации");
+                        self.associationViewController = [[AssociationViewController alloc]initWithNibName:@"AssociationViewController" bundle:nil];
+                        [self.navigationController pushViewController:associationViewController animated:YES];
+                    }
+                    else {
+                        if (indexPath.row == [choosed indexOfObject:@"Ударение"]) {
+                            NSLog(@"Ударение");
+                            self.accentViewcontroller = [[AccentViewController alloc]initWithNibName:@"AccentViewController" bundle:nil];
+                            [self.navigationController pushViewController:accentViewcontroller animated:YES];
+                        }
+                        else {
+                            if (indexPath.row == [choosed indexOfObject:@"Грамматика"]) {
+                                NSLog(@"Грамматика");
+                                self.grammaticviewController = [[GrammaticViewController alloc]initWithNibName:@"GrammaticViewController" bundle:nil];
+                                [self.navigationController pushViewController:grammaticviewController animated:YES];
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -149,6 +185,10 @@
     listeningViewController.filmViewController.timerLabel.text = timeString;
     picture_wordViewController.timerLabel.text = timeString;
     groupingViewController.timerLabel.text = timeString;
+    punctuatonViewController.timerLabel.text = timeString;
+    associationViewController.timerLabel.text = timeString;
+    accentViewcontroller.timerLabel.text = timeString;
+    grammaticviewController.timerLabel.text = timeString;
     //[dateFormatter release];
 }
 

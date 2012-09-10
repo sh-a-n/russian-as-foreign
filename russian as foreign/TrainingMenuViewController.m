@@ -27,9 +27,17 @@
 @synthesize listeningButton;
 @synthesize picture_wordButton;
 @synthesize gruppingButton;
+@synthesize punctuationButton;
+@synthesize associationButton;
+@synthesize accentButton;
+@synthesize grammaticButton;
 @synthesize listeningSwitch;
 @synthesize picture_wordSwitch;
 @synthesize groupingSwitch;
+@synthesize punctuationSwitch;
+@synthesize associationSwitch;
+@synthesize accentSwitch;
+@synthesize grammaticSwitch;
 @synthesize okButton;
 @synthesize choosed0;
 
@@ -51,9 +59,10 @@
     [navigationBar setFrame:CGRectMake(0, 0, 480, 38)];
     [toolBar setFrame:CGRectMake(0, 245, 480, 55)];
     [scrollView setFrame:CGRectMake(0, 38, 480, 207)];
+    [scrollView setContentSize:CGSizeMake(480, 360)];
     [listeningButton setHidden:NO];
-    self.switchers = [NSArray arrayWithObjects:listeningSwitch,picture_wordSwitch, groupingSwitch, nil];
-    self.buttons = [NSArray arrayWithObjects:listeningButton,picture_wordButton,gruppingButton, nil];
+    self.switchers = [NSArray arrayWithObjects:punctuationSwitch,listeningSwitch,picture_wordSwitch, groupingSwitch,associationSwitch,accentSwitch,grammaticSwitch, nil];
+    self.buttons = [NSArray arrayWithObjects:punctuationButton,listeningButton,picture_wordButton,gruppingButton,associationButton,accentButton,grammaticButton, nil];
     choosed0 = [[NSMutableArray alloc]init];
     
 }
@@ -72,6 +81,14 @@
     [self setPicture_wordSwitch:nil];
     [self setGroupingSwitch:nil];
     [self setOkButton:nil];
+    [self setPunctuationButton:nil];
+    [self setAssociationButton:nil];
+    [self setAccentButton:nil];
+    [self setGrammaticButton:nil];
+    [self setPunctuationSwitch:nil];
+    [self setAssociationSwitch:nil];
+    [self setAccentSwitch:nil];
+    [self setGrammaticSwitch:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

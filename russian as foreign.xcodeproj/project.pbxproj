@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4724CF15FDC08A005E733C /* PunctuationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4724CD15FDC089005E733C /* PunctuationViewController.m */; };
+		CE4724D015FDC08A005E733C /* PunctuationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4724CE15FDC089005E733C /* PunctuationViewController.xib */; };
+		CE4724D415FDC191005E733C /* AssociationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4724D215FDC191005E733C /* AssociationViewController.m */; };
+		CE4724D515FDC191005E733C /* AssociationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4724D315FDC191005E733C /* AssociationViewController.xib */; };
+		CE4724D915FDC275005E733C /* GrammaticViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4724D715FDC275005E733C /* GrammaticViewController.m */; };
+		CE4724DA15FDC275005E733C /* GrammaticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4724D815FDC275005E733C /* GrammaticViewController.xib */; };
+		CE4724DE15FDC414005E733C /* AccentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4724DC15FDC414005E733C /* AccentViewController.m */; };
+		CE4724DF15FDC414005E733C /* AccentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4724DD15FDC414005E733C /* AccentViewController.xib */; };
 		CE6B4E8515F49505006E14FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4E8115F49505006E14FC /* InfoPlist.strings */; };
 		CE6B4E8615F49505006E14FC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4E8315F49505006E14FC /* ViewController.xib */; };
 		CE94FD8015ED4B0D00835CB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD7F15ED4B0D00835CB4 /* UIKit.framework */; };
@@ -98,6 +106,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE4724CC15FDC089005E733C /* PunctuationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PunctuationViewController.h; path = "russian as foreign/PunctuationViewController.h"; sourceTree = "<group>"; };
+		CE4724CD15FDC089005E733C /* PunctuationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PunctuationViewController.m; path = "russian as foreign/PunctuationViewController.m"; sourceTree = "<group>"; };
+		CE4724CE15FDC089005E733C /* PunctuationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PunctuationViewController.xib; path = "russian as foreign/PunctuationViewController.xib"; sourceTree = "<group>"; };
+		CE4724D115FDC191005E733C /* AssociationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AssociationViewController.h; path = "russian as foreign/AssociationViewController.h"; sourceTree = "<group>"; };
+		CE4724D215FDC191005E733C /* AssociationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AssociationViewController.m; path = "russian as foreign/AssociationViewController.m"; sourceTree = "<group>"; };
+		CE4724D315FDC191005E733C /* AssociationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AssociationViewController.xib; path = "russian as foreign/AssociationViewController.xib"; sourceTree = "<group>"; };
+		CE4724D615FDC275005E733C /* GrammaticViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GrammaticViewController.h; path = "russian as foreign/GrammaticViewController.h"; sourceTree = "<group>"; };
+		CE4724D715FDC275005E733C /* GrammaticViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GrammaticViewController.m; path = "russian as foreign/GrammaticViewController.m"; sourceTree = "<group>"; };
+		CE4724D815FDC275005E733C /* GrammaticViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GrammaticViewController.xib; path = "russian as foreign/GrammaticViewController.xib"; sourceTree = "<group>"; };
+		CE4724DB15FDC414005E733C /* AccentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AccentViewController.h; path = "russian as foreign/AccentViewController.h"; sourceTree = "<group>"; };
+		CE4724DC15FDC414005E733C /* AccentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AccentViewController.m; path = "russian as foreign/AccentViewController.m"; sourceTree = "<group>"; };
+		CE4724DD15FDC414005E733C /* AccentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AccentViewController.xib; path = "russian as foreign/AccentViewController.xib"; sourceTree = "<group>"; };
 		CE6B4E8215F49505006E14FC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE6B4E8415F49505006E14FC /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/ViewController.xib; sourceTree = "<group>"; };
 		CE94FD7B15ED4B0D00835CB4 /* russian as foreign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "russian as foreign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +236,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4724C715FDBE8E005E733C /* Punctuation */ = {
+			isa = PBXGroup;
+			children = (
+				CE4724CC15FDC089005E733C /* PunctuationViewController.h */,
+				CE4724CD15FDC089005E733C /* PunctuationViewController.m */,
+				CE4724CE15FDC089005E733C /* PunctuationViewController.xib */,
+			);
+			name = Punctuation;
+			sourceTree = "<group>";
+		};
+		CE4724C915FDBEDF005E733C /* Association */ = {
+			isa = PBXGroup;
+			children = (
+				CE4724D115FDC191005E733C /* AssociationViewController.h */,
+				CE4724D215FDC191005E733C /* AssociationViewController.m */,
+				CE4724D315FDC191005E733C /* AssociationViewController.xib */,
+			);
+			name = Association;
+			sourceTree = "<group>";
+		};
+		CE4724CA15FDBF06005E733C /* Grammatic */ = {
+			isa = PBXGroup;
+			children = (
+				CE4724D615FDC275005E733C /* GrammaticViewController.h */,
+				CE4724D715FDC275005E733C /* GrammaticViewController.m */,
+				CE4724D815FDC275005E733C /* GrammaticViewController.xib */,
+			);
+			name = Grammatic;
+			sourceTree = "<group>";
+		};
+		CE4724CB15FDC001005E733C /* Accent */ = {
+			isa = PBXGroup;
+			children = (
+				CE4724DB15FDC414005E733C /* AccentViewController.h */,
+				CE4724DC15FDC414005E733C /* AccentViewController.m */,
+				CE4724DD15FDC414005E733C /* AccentViewController.xib */,
+			);
+			name = Accent;
+			sourceTree = "<group>";
+		};
 		CE6B4E8015F49505006E14FC /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +319,10 @@
 		CE94FE7615ED4D7300835CB4 /* russian as foreign */ = {
 			isa = PBXGroup;
 			children = (
+				CE4724CB15FDC001005E733C /* Accent */,
+				CE4724CA15FDBF06005E733C /* Grammatic */,
+				CE4724C915FDBEDF005E733C /* Association */,
+				CE4724C715FDBE8E005E733C /* Punctuation */,
 				CE6B4E8015F49505006E14FC /* en.lproj */,
 				CE94FE7A15ED4DC600835CB4 /* Training */,
 				CE94FE7915ED4DB400835CB4 /* Picture_word */,
@@ -551,6 +615,10 @@
 				CED8C98C15F4B254002D8087 /* image6.jpg in Resources */,
 				CED8C98D15F4B254002D8087 /* image7.jpg in Resources */,
 				CED8C99015F4B36C002D8087 /* image1.png in Resources */,
+				CE4724D015FDC08A005E733C /* PunctuationViewController.xib in Resources */,
+				CE4724D515FDC191005E733C /* AssociationViewController.xib in Resources */,
+				CE4724DA15FDC275005E733C /* GrammaticViewController.xib in Resources */,
+				CE4724DF15FDC414005E733C /* AccentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +639,10 @@
 				CE94FE7115ED4D6A00835CB4 /* TrainingMenuViewController.m in Sources */,
 				CE94FE7315ED4D6A00835CB4 /* TrainingSubMenuViewController.m in Sources */,
 				CE94FE7515ED4D6A00835CB4 /* ViewController.m in Sources */,
+				CE4724CF15FDC08A005E733C /* PunctuationViewController.m in Sources */,
+				CE4724D415FDC191005E733C /* AssociationViewController.m in Sources */,
+				CE4724D915FDC275005E733C /* GrammaticViewController.m in Sources */,
+				CE4724DE15FDC414005E733C /* AccentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

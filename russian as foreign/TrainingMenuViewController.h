@@ -24,9 +24,17 @@
 @property (weak, nonatomic) IBOutlet UIButton *listeningButton;
 @property (weak, nonatomic) IBOutlet UIButton *picture_wordButton;
 @property (weak, nonatomic) IBOutlet UIButton *gruppingButton;
+@property (weak, nonatomic) IBOutlet UIButton *punctuationButton;
+@property (weak, nonatomic) IBOutlet UIButton *associationButton;
+@property (weak, nonatomic) IBOutlet UIButton *accentButton;
+@property (weak, nonatomic) IBOutlet UIButton *grammaticButton;
 @property (weak, nonatomic) IBOutlet UISwitch *listeningSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *picture_wordSwitch;
 @property (weak, nonatomic) IBOutlet UISwitch *groupingSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *punctuationSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *associationSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *accentSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *grammaticSwitch;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *okButton;
 - (IBAction)backButtonSelector:(id)sender;
 - (IBAction)okButtonSelector:(id)sender;

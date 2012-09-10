@@ -12,6 +12,10 @@
 @class FilmViewController;
 @class GroupingViewController;
 @class Picture_wordViewController;
+@class AccentViewController;
+@class GrammaticViewController;
+@class AssociationViewController;
+@class PunctuationViewController;
 
 @interface TrainingSubMenuViewController : UIViewController
 {
@@ -23,6 +27,10 @@
 @property (strong, nonatomic) FilmViewController * filmViewController;
 @property (strong, nonatomic) GroupingViewController * groupingViewController;
 @property (strong, nonatomic) Picture_wordViewController * picture_wordViewController;
+@property (strong, nonatomic) AccentViewController * accentViewcontroller;
+@property (strong, nonatomic) GrammaticViewController * grammaticviewController;
+@property (strong, nonatomic) AssociationViewController * associationViewController;
+@property (strong, nonatomic) PunctuationViewController * punctuatonViewController;
 @property (nonatomic, retain) NSData * startDate;
 @property (nonatomic, retain) NSTimer * timer;
 @property (weak, nonatomic) IBOutlet UILabel *navigationBarLabel;
