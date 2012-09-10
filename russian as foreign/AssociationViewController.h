@@ -15,6 +15,19 @@
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 @property (weak, nonatomic) IBOutlet UILabel *timerLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *timerBack;
+@property (nonatomic, retain) NSArray * firstWordsButtons;
+@property (nonatomic, retain) NSArray * secondWordsButtons;
+@property (nonatomic, retain) NSMutableArray * firstWords;
+@property (nonatomic, retain) NSMutableArray * secondWords;
+@property (weak, nonatomic) IBOutlet UIButton *firstWordsButton1;
+@property (weak, nonatomic) IBOutlet UIButton *firstWordsButton2;
+@property (weak, nonatomic) IBOutlet UIButton *firstWordsButton3;
+@property (weak, nonatomic) IBOutlet UIButton *firstWordsButton4;
+@property (weak, nonatomic) IBOutlet UIButton *secondWordsButton1;
+@property (weak, nonatomic) IBOutlet UIButton *secondWordsButton2;
+@property (weak, nonatomic) IBOutlet UIButton *secondWordsButton3;
+@property (weak, nonatomic) IBOutlet UIButton *secondWordsButton4;
+
 - (IBAction)cancelButtonSelector:(id)sender;
 - (IBAction)okButtonSelector:(id)sender;
 

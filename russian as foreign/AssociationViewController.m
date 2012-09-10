@@ -19,6 +19,19 @@
 @synthesize toolBar;
 @synthesize timerLabel;
 @synthesize timerBack;
+@synthesize firstWordsButtons;
+@synthesize secondWordsButtons;
+@synthesize firstWords;
+@synthesize secondWords;
+@synthesize firstWordsButton1;
+@synthesize firstWordsButton2;
+@synthesize firstWordsButton3;
+@synthesize firstWordsButton4;
+@synthesize secondWordsButton1;
+@synthesize secondWordsButton2;
+@synthesize secondWordsButton3;
+@synthesize secondWordsButton4;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,6 +52,14 @@
     [toolBar setFrame:CGRectMake(0, 245, 480, 55)];
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
     [toolBar setBackgroundImage:[UIImage imageNamed:@"tabBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
+    firstWordsButtons = [NSArray arrayWithObjects:firstWordsButton1,firstWordsButton2,firstWordsButton3,firstWordsButton4, nil];
+    secondWordsButtons = [NSArray arrayWithObjects:secondWordsButton1,secondWordsButton2,secondWordsButton3,secondWordsButton4, nil];
+    firstWords = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8", nil];
+    secondWords = [NSArray arrayWithObjects:@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18", nil];
+    for (int i=0; i<4; i++) {
+        [[firstWordsButtons objectAtIndex:i] setTitle:[firstWords objectAtIndex:i]];
+        [[secondWordsButtons objectAtIndex:i] setTitle:[secondWords objectAtIndex:i]];
+    }
 }
 
 - (void)viewDidUnload
@@ -49,6 +70,14 @@
     [self setToolBar:nil];
     [self setTimerLabel:nil];
     [self setTimerBack:nil];
+    [self setFirstWordsButton1:nil];
+    [self setFirstWordsButton2:nil];
+    [self setFirstWordsButton3:nil];
+    [self setFirstWordsButton4:nil];
+    [self setSecondWordsButton1:nil];
+    [self setSecondWordsButton2:nil];
+    [self setSecondWordsButton3:nil];
+    [self setSecondWordsButton4:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -67,4 +96,6 @@
     NSArray * controllers = self.navigationController.viewControllers;
     [self.navigationController popToViewController:[controllers objectAtIndex:2] animated:YES];
 }
+
+
 @end
