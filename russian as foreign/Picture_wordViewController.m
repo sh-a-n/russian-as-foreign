@@ -47,6 +47,8 @@
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
     [toolBar setBackgroundImage:[UIImage imageNamed:@"tabBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     imageNameArray = [[NSArray alloc] initWithObjects:@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",@"image5.jpg", nil];
+    wordArray = [[NSArray alloc] initWithObjects:@"image1.jpg",@"image2.jpg",@"image3.jpg",@"image4.jpg",@"image5.jpg", nil];
+    wordLabel.text = [wordArray objectAtIndex:0];
     [scrollView setContentSize:CGSizeMake(246+imageNameArray.count*imageWidth, 161)];
     int x=127;
     for (NSString* name in imageNameArray)
@@ -92,7 +94,10 @@
     CGFloat contentOffset = scrollView.contentOffset.x - (imageWidth + 8);
     nextPage = (int)(contentOffset/(imageWidth + 8));
     if (nextPage >=0)
+    {
         [scrollView setContentOffset:CGPointMake(nextPage*(imageWidth+8), 0) animated:YES];
+        wordLabel.text = [wordArray objectAtIndex:nextPage];
+    }
 }
 
 - (IBAction)swipeLeft:(id)sender {
@@ -100,7 +105,10 @@
     CGFloat contentOffset = scrollView.contentOffset.x + (imageWidth + 8);
     nextPage = (int)(contentOffset/(imageWidth + 8));
     if (nextPage < imageNameArray.count)
+    {
         [scrollView setContentOffset:CGPointMake(nextPage*(imageWidth+8), 0) animated:YES];
+        wordLabel.text = [wordArray objectAtIndex:nextPage];
+    }
 }
 
 - (IBAction)playButton:(id)sender {
