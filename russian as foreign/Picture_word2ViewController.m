@@ -26,6 +26,7 @@
 @synthesize swipeRightRecognizer;
 @synthesize swipeLeftRecognizer;
 @synthesize imageNameArray;
+@synthesize answerArray;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,6 +48,7 @@
     [navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationBar.png"] forBarMetrics:UIBarMetricsDefault];
     [toolBar setBackgroundImage:[UIImage imageNamed:@"tabBar.png"] forToolbarPosition:UIToolbarPositionAny barMetrics:UIBarMetricsDefault];
     [scrollView setContentSize:CGSizeMake(246+ imageNameArray.count*imageWidth, 161)];
+    answerArray = [[NSMutableArray alloc] init];
     int x=127;
     for (NSString* name in imageNameArray)
     {
@@ -55,7 +57,11 @@
         [imageArray addObject:imageViewLoc];
         [scrollView addSubview:imageViewLoc];
         x+=224;
+        [answerArray addObject:@""];
     }
+    
+    //[backgrondButton setImage:[UIImage imageNamed:@"NavigationBar.png"] forState:UIControlStateNormal];
+    //[backgrondButton setBackgroundImage:<#(UIImage *)#> forState:<#(UIControlState)#>
 
     // Do any additional setup after loading the view from its nib.
 }
@@ -94,8 +100,29 @@
     if (nextPage >=0)
     {
         [scrollView setContentOffset:CGPointMake(nextPage*(imageWidth+8), 0) animated:YES];
+        textField.text = [answerArray objectAtIndex:nextPage];
         //wordLabel.text = [wordArray objectAtIndex:nextPage];
     }
+}
+
+- (IBAction)applyButtonTap:(id)sender
+{
+     [textField resignFirstResponder];
+    [UIView animateWithDuration:0.2 animations:^{
+        self.view.transform = CGAffineTransformIdentity;
+    } completion:^(BOOL finished){
+        
+    }];
+    [answerArray replaceObjectAtIndex:nextPage withObject:textField.text];
+//    
+//    [textField resignFirstResponder];
+//    
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:0.5f];
+//    
+//    self.view.transform = CGAffineTransformIdentity;
+//    
+//    [UIView commitAnimations];
 }
 
 - (IBAction)swipeLeft:(id)sender {
@@ -105,8 +132,29 @@
     if (nextPage < imageNameArray.count)
     {
         [scrollView setContentOffset:CGPointMake(nextPage*(imageWidth+8), 0) animated:YES];
+        textField.text = [answerArray objectAtIndex:nextPage];
         //wordLabel.text = [wordArray objectAtIndex:nextPage];
     }
+}
+
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
+{
+    [UIView animateWithDuration:0.2 animations:^{
+        self.view.transform = CGAffineTransformMakeTranslation(0.0f, -112.0f);
+    } completion:^(BOOL finished){
+         
+     }];
+//    
+//    [UIView beginAnimations:nil context:nil];
+//    [UIView setAnimationDuration:0.5f];
+//    
+//    self.view.transform = CGAffineTransformMakeTranslation(0.0f, -100.0f);
+//    
+//    [UIView commitAnimations];
+    
+    return YES;
 }
 
 @end

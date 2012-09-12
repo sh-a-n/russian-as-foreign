@@ -10,7 +10,7 @@
 
 #define imageWidth 216
 
-@interface Picture_word2ViewController : UIViewController
+@interface Picture_word2ViewController : UIViewController <UITextFieldDelegate>
 {
     int nextPage;
 }
@@ -25,9 +25,11 @@
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
 @property (retain, nonatomic) NSArray *imageNameArray;
 @property (retain, nonatomic) NSMutableArray *imageArray;
+@property (retain, nonatomic) NSMutableArray *answerArray;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeRightRecognizer;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeLeftRecognizer;
 - (IBAction)backButtonSelect:(id)sender;
 - (IBAction)swipeLeft:(id)sender;
 - (IBAction)swipeRight:(id)sender;
+- (IBAction)applyButtonTap:(id)sender;
 @end

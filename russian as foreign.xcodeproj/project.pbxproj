@@ -19,6 +19,13 @@
 		CE6B4E8615F49505006E14FC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4E8315F49505006E14FC /* ViewController.xib */; };
 		CE6B4EAA15FE06D4006E14FC /* Picture_word2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6B4EA815FE06D4006E14FC /* Picture_word2ViewController.m */; };
 		CE6B4EAB15FE06D4006E14FC /* Picture_word2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EA915FE06D4006E14FC /* Picture_word2ViewController.xib */; };
+		CE6B4EBB16005EDF006E14FC /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EB416005EDF006E14FC /* image1.jpg */; };
+		CE6B4EBC16005EDF006E14FC /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EB516005EDF006E14FC /* image2.jpg */; };
+		CE6B4EBD16005EDF006E14FC /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EB616005EDF006E14FC /* image3.jpg */; };
+		CE6B4EBE16005EDF006E14FC /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EB716005EDF006E14FC /* image4.jpg */; };
+		CE6B4EBF16005EDF006E14FC /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EB816005EDF006E14FC /* image5.jpg */; };
+		CE6B4EC016005EDF006E14FC /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EB916005EDF006E14FC /* image6.jpg */; };
+		CE6B4EC116005EE0006E14FC /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE6B4EBA16005EDF006E14FC /* image7.jpg */; };
 		CE94FD8015ED4B0D00835CB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD7F15ED4B0D00835CB4 /* UIKit.framework */; };
 		CE94FD8215ED4B0D00835CB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD8115ED4B0D00835CB4 /* Foundation.framework */; };
 		CE94FD8415ED4B0D00835CB4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE94FD8315ED4B0D00835CB4 /* CoreGraphics.framework */; };
@@ -97,13 +104,6 @@
 		CE94FEF115ED4EE900835CB4 /* textback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE94FEB815ED4EE900835CB4 /* textback@2x.png */; };
 		CE94FEF215ED4EE900835CB4 /* TimerBack.png in Resources */ = {isa = PBXBuildFile; fileRef = CE94FEB915ED4EE900835CB4 /* TimerBack.png */; };
 		CE94FEF315ED4EE900835CB4 /* TimerBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE94FEBA15ED4EE900835CB4 /* TimerBack@2x.png */; };
-		CED8C98715F4B254002D8087 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98015F4B254002D8087 /* image1.jpg */; };
-		CED8C98815F4B254002D8087 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98115F4B254002D8087 /* image2.jpg */; };
-		CED8C98915F4B254002D8087 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98215F4B254002D8087 /* image3.jpg */; };
-		CED8C98A15F4B254002D8087 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98315F4B254002D8087 /* image4.jpg */; };
-		CED8C98B15F4B254002D8087 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98415F4B254002D8087 /* image5.jpg */; };
-		CED8C98C15F4B254002D8087 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98515F4B254002D8087 /* image6.jpg */; };
-		CED8C98D15F4B254002D8087 /* image7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98615F4B254002D8087 /* image7.jpg */; };
 		CED8C99015F4B36C002D8087 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = CED8C98F15F4B36C002D8087 /* image1.png */; };
 /* End PBXBuildFile section */
 
@@ -125,6 +125,13 @@
 		CE6B4EA715FE06D4006E14FC /* Picture_word2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Picture_word2ViewController.h; path = "russian as foreign/Picture_word2ViewController.h"; sourceTree = "<group>"; };
 		CE6B4EA815FE06D4006E14FC /* Picture_word2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Picture_word2ViewController.m; path = "russian as foreign/Picture_word2ViewController.m"; sourceTree = "<group>"; };
 		CE6B4EA915FE06D4006E14FC /* Picture_word2ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Picture_word2ViewController.xib; path = "russian as foreign/Picture_word2ViewController.xib"; sourceTree = "<group>"; };
+		CE6B4EB416005EDF006E14FC /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = UI/image1.jpg; sourceTree = SOURCE_ROOT; };
+		CE6B4EB516005EDF006E14FC /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = UI/image2.jpg; sourceTree = SOURCE_ROOT; };
+		CE6B4EB616005EDF006E14FC /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = UI/image3.jpg; sourceTree = SOURCE_ROOT; };
+		CE6B4EB716005EDF006E14FC /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image4.jpg; path = UI/image4.jpg; sourceTree = SOURCE_ROOT; };
+		CE6B4EB816005EDF006E14FC /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image5.jpg; path = UI/image5.jpg; sourceTree = SOURCE_ROOT; };
+		CE6B4EB916005EDF006E14FC /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image6.jpg; path = UI/image6.jpg; sourceTree = SOURCE_ROOT; };
+		CE6B4EBA16005EDF006E14FC /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image7.jpg; path = UI/image7.jpg; sourceTree = SOURCE_ROOT; };
 		CE94FD7B15ED4B0D00835CB4 /* russian as foreign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "russian as foreign.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE94FD7F15ED4B0D00835CB4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE94FD8115ED4B0D00835CB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -215,13 +222,6 @@
 		CE94FEB815ED4EE900835CB4 /* textback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textback@2x.png"; sourceTree = "<group>"; };
 		CE94FEB915ED4EE900835CB4 /* TimerBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimerBack.png; sourceTree = "<group>"; };
 		CE94FEBA15ED4EE900835CB4 /* TimerBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TimerBack@2x.png"; sourceTree = "<group>"; };
-		CED8C98015F4B254002D8087 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image1.jpg; path = ../UI/image1.jpg; sourceTree = "<group>"; };
-		CED8C98115F4B254002D8087 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image2.jpg; path = ../UI/image2.jpg; sourceTree = "<group>"; };
-		CED8C98215F4B254002D8087 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image3.jpg; path = ../UI/image3.jpg; sourceTree = "<group>"; };
-		CED8C98315F4B254002D8087 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image4.jpg; path = ../UI/image4.jpg; sourceTree = "<group>"; };
-		CED8C98415F4B254002D8087 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image5.jpg; path = ../UI/image5.jpg; sourceTree = "<group>"; };
-		CED8C98515F4B254002D8087 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image6.jpg; path = ../UI/image6.jpg; sourceTree = "<group>"; };
-		CED8C98615F4B254002D8087 /* image7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image7.jpg; path = ../UI/image7.jpg; sourceTree = "<group>"; };
 		CED8C98F15F4B36C002D8087 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -285,7 +285,6 @@
 			isa = PBXGroup;
 			children = (
 				CE6B4E8115F49505006E14FC /* InfoPlist.strings */,
-				CE6B4E8315F49505006E14FC /* ViewController.xib */,
 			);
 			name = en.lproj;
 			path = "russian as foreign/en.lproj";
@@ -324,6 +323,7 @@
 		CE94FE7615ED4D7300835CB4 /* russian as foreign */ = {
 			isa = PBXGroup;
 			children = (
+				CE94FE7715ED4D9800835CB4 /* Listening */,
 				CE4724CB15FDC001005E733C /* Accent */,
 				CE4724CA15FDBF06005E733C /* Grammatic */,
 				CE4724C915FDBEDF005E733C /* Association */,
@@ -332,7 +332,6 @@
 				CE94FE7A15ED4DC600835CB4 /* Training */,
 				CE94FE7915ED4DB400835CB4 /* Picture_word */,
 				CE94FE7815ED4DAA00835CB4 /* Grouping */,
-				CE94FE7715ED4D9800835CB4 /* Listening */,
 				CE94FE7B15ED4DF400835CB4 /* MainView */,
 			);
 			name = "russian as foreign";
@@ -396,6 +395,7 @@
 				CE94FE5815ED4D6900835CB4 /* SoundPlayer.m */,
 				CE94FE5F15ED4D6900835CB4 /* ViewController.h */,
 				CE94FE6015ED4D6900835CB4 /* ViewController.m */,
+				CE6B4E8315F49505006E14FC /* ViewController.xib */,
 			);
 			name = MainView;
 			sourceTree = "<group>";
@@ -425,13 +425,13 @@
 		CE94FE8115ED4EE900835CB4 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CED8C98015F4B254002D8087 /* image1.jpg */,
-				CED8C98115F4B254002D8087 /* image2.jpg */,
-				CED8C98215F4B254002D8087 /* image3.jpg */,
-				CED8C98315F4B254002D8087 /* image4.jpg */,
-				CED8C98415F4B254002D8087 /* image5.jpg */,
-				CED8C98515F4B254002D8087 /* image6.jpg */,
-				CED8C98615F4B254002D8087 /* image7.jpg */,
+				CE6B4EB416005EDF006E14FC /* image1.jpg */,
+				CE6B4EB516005EDF006E14FC /* image2.jpg */,
+				CE6B4EB616005EDF006E14FC /* image3.jpg */,
+				CE6B4EB716005EDF006E14FC /* image4.jpg */,
+				CE6B4EB816005EDF006E14FC /* image5.jpg */,
+				CE6B4EB916005EDF006E14FC /* image6.jpg */,
+				CE6B4EBA16005EDF006E14FC /* image7.jpg */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -615,19 +615,19 @@
 				CE94FEF315ED4EE900835CB4 /* TimerBack@2x.png in Resources */,
 				CE6B4E8515F49505006E14FC /* InfoPlist.strings in Resources */,
 				CE6B4E8615F49505006E14FC /* ViewController.xib in Resources */,
-				CED8C98715F4B254002D8087 /* image1.jpg in Resources */,
-				CED8C98815F4B254002D8087 /* image2.jpg in Resources */,
-				CED8C98915F4B254002D8087 /* image3.jpg in Resources */,
-				CED8C98A15F4B254002D8087 /* image4.jpg in Resources */,
-				CED8C98B15F4B254002D8087 /* image5.jpg in Resources */,
-				CED8C98C15F4B254002D8087 /* image6.jpg in Resources */,
-				CED8C98D15F4B254002D8087 /* image7.jpg in Resources */,
 				CED8C99015F4B36C002D8087 /* image1.png in Resources */,
 				CE4724D015FDC08A005E733C /* PunctuationViewController.xib in Resources */,
 				CE4724D515FDC191005E733C /* AssociationViewController.xib in Resources */,
 				CE4724DA15FDC275005E733C /* GrammaticViewController.xib in Resources */,
 				CE4724DF15FDC414005E733C /* AccentViewController.xib in Resources */,
 				CE6B4EAB15FE06D4006E14FC /* Picture_word2ViewController.xib in Resources */,
+				CE6B4EBB16005EDF006E14FC /* image1.jpg in Resources */,
+				CE6B4EBC16005EDF006E14FC /* image2.jpg in Resources */,
+				CE6B4EBD16005EDF006E14FC /* image3.jpg in Resources */,
+				CE6B4EBE16005EDF006E14FC /* image4.jpg in Resources */,
+				CE6B4EBF16005EDF006E14FC /* image5.jpg in Resources */,
+				CE6B4EC016005EDF006E14FC /* image6.jpg in Resources */,
+				CE6B4EC116005EE0006E14FC /* image7.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +673,7 @@
 				CE6B4E8415F49505006E14FC /* ru */,
 			);
 			name = ViewController.xib;
+			path = "russian as foreign/en.lproj";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

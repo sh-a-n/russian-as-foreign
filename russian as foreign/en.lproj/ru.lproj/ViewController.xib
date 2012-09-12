@@ -349,7 +349,6 @@
 						<int key="objectID">6</int>
 						<reference key="object" ref="774585933"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="310375902"/>
 							<reference ref="564814706"/>
 							<reference ref="100285118"/>
 							<reference ref="795741058"/>
@@ -357,6 +356,7 @@
 							<reference ref="770642523"/>
 							<reference ref="412324957"/>
 							<reference ref="968595156"/>
+							<reference ref="310375902"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
