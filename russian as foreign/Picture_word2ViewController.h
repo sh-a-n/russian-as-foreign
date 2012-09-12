@@ -29,6 +29,7 @@
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeRightRecognizer;
 @property (strong, nonatomic) IBOutlet UISwipeGestureRecognizer *swipeLeftRecognizer;
 - (IBAction)backButtonSelect:(id)sender;
+- (IBAction)okButtonSelector:(id)sender;
 - (IBAction)swipeLeft:(id)sender;
 - (IBAction)swipeRight:(id)sender;
 - (IBAction)applyButtonTap:(id)sender;

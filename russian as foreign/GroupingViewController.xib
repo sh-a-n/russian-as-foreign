@@ -116,7 +116,7 @@
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="371897019">
 									<object class="NSCustomResource" key="IBUIImage">
 										<string key="NSClassName">NSImage</string>
-										<string key="NSResourceName">abort.png</string>
+										<string key="NSResourceName">back_arrow.png</string>
 									</object>
 									<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 									<int key="IBUIStyle">1</int>
@@ -689,6 +689,14 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">okButtonSelector:</string>
+						<reference key="source" ref="700541822"/>
+						<reference key="destination" ref="372490531"/>
+					</object>
+					<int key="connectionID">130</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
 						<string key="label">firstGroupButton:</string>
 						<reference key="source" ref="821356020"/>
 						<reference key="destination" ref="372490531"/>
@@ -784,7 +792,6 @@
 							<reference ref="392197212"/>
 							<reference ref="395904568"/>
 							<reference ref="583414587"/>
-							<reference ref="1038163851"/>
 							<reference ref="846367803"/>
 							<reference ref="821356020"/>
 							<reference ref="1010361166"/>
@@ -796,6 +803,7 @@
 							<reference ref="629434609"/>
 							<reference ref="606353427"/>
 							<reference ref="433778151"/>
+							<reference ref="1038163851"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -994,7 +1002,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">129</int>
+			<int key="maxID">130</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
@@ -1010,7 +1018,7 @@
 			<string key="Tabbutton_g@2x.png">{226, 80}</string>
 			<string key="Tabbutton_r@2x.png">{226, 80}</string>
 			<string key="TimerBack.png">{70, 32}</string>
-			<string key="abort.png">{16, 16}</string>
+			<string key="back_arrow.png">{16, 16}</string>
 			<string key="background.png">{480, 320}</string>
 			<string key="button_1.png">{50, 50}</string>
 			<string key="button_2.png">{50, 50}</string>

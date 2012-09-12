@@ -100,6 +100,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)okButtonSelector:(id)sender {
+    NSArray * controllers = self.navigationController.viewControllers;
+    [self.navigationController popToViewController:[controllers objectAtIndex:2] animated:YES];
+}
+
 - (IBAction)firstGroupButton:(id)sender {
     [first addObject:[sourse objectAtIndex:0]];
     [sourse removeObjectAtIndex:0];

@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "TrainingMenuViewController.h"
+#import "AboutProgramViewController.h"
+
 
 @interface ViewController ()
 
@@ -15,6 +17,7 @@
 
 @implementation ViewController
 @synthesize trainingMenuViewController;
+@synthesize aboutProgramViewController;
 @synthesize bigLabel;
 @synthesize smallLabel;
 @synthesize trainingButton;
@@ -33,7 +36,7 @@
     [testButton setEnabled:NO];
     [settingsButton setEnabled:NO];
     [statButton setEnabled:NO];
-    [aboutButton setEnabled:NO];
+    //[aboutButton setEnabled:NO];
 }
 
 - (void)viewDidUnload
@@ -57,5 +60,19 @@
 - (IBAction)trainingButtonTap:(id)sender {
     self.trainingMenuViewController = [[TrainingMenuViewController alloc]initWithNibName:@"TrainingMenuViewController" bundle:nil];
     [self.navigationController pushViewController:trainingMenuViewController animated:YES];
+}
+
+- (IBAction)testButtonTap:(id)sender {
+}
+
+- (IBAction)settingsButtonTap:(UIButton *)sender {
+}
+
+- (IBAction)statButtonTap:(id)sender {
+}
+
+- (IBAction)aboutButtonTap:(id)sender {
+    self.aboutProgramViewController = [[AboutProgramViewController alloc]initWithNibName:@"AboutProgramViewController" bundle:nil];
+    [self.navigationController pushViewController:aboutProgramViewController animated:YES];
 }
 @end

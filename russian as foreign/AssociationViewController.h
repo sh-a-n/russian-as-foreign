@@ -9,6 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AssociationViewController : UIViewController
+{
+    int choosedButton1;
+    int choosedButton2;
+    int indexofwords;
+}
 @property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelNavigationButton;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *okNavigationButton;
@@ -28,8 +33,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *secondWordsButton2;
 @property (weak, nonatomic) IBOutlet UIButton *secondWordsButton3;
 @property (weak, nonatomic) IBOutlet UIButton *secondWordsButton4;
+@property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 
 - (IBAction)cancelButtonSelector:(id)sender;
 - (IBAction)okButtonSelector:(id)sender;
+- (IBAction)buttonsToch:(UIButton*)sender;
 
 @end

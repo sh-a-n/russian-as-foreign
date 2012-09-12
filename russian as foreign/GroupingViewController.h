@@ -43,6 +43,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *MytableView;
 //@property (nonatomic, retain) NSInteger index;
 - (IBAction)abortButtonSelector:(id)sender;
+- (IBAction)okButtonSelector:(id)sender;
 - (IBAction)firstGroupButton:(id)sender;
 - (IBAction)secondGroupButton:(id)sender;
 - (IBAction)thirdGroupButton:(id)sender;

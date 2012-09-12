@@ -93,6 +93,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (IBAction)okButtonSelector:(id)sender {
+    NSArray * controllers = self.navigationController.viewControllers;
+    [self.navigationController popToViewController:[controllers objectAtIndex:2] animated:YES];
+}
+
 - (IBAction)swipeRight:(id)sender {
     //UIImageView * image1 = [imageArray objectAtIndex:0];
     CGFloat contentOffset = scrollView.contentOffset.x - (imageWidth + 8);

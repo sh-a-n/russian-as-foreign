@@ -32,6 +32,7 @@
 @synthesize secondWordsButton2;
 @synthesize secondWordsButton3;
 @synthesize secondWordsButton4;
+@synthesize progressLabel;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -59,14 +60,18 @@
     secondWords = [NSArray arrayWithObjects:@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18", nil];
     
     words = [[NSMutableDictionary alloc] init];
-    
-    for (int i=0; i<4; i++) {
-        UIButton * button = (UIButton*)[firstWordsButtons objectAtIndex:i];
+    indexofwords = 0;
+    for (int i=indexofwords;i<indexofwords+4; i++) {
+        UIButton * button = (UIButton*)[firstWordsButtons objectAtIndex:i-indexofwords];
         [button setTitle:[firstWords objectAtIndex:i] forState:UIControlStateNormal];
-        //[[secondWordsButtons objectAtIndex:i] setTitle:[secondWords objectAtIndex:i]];
-        button = (UIButton*)[secondWordsButtons objectAtIndex:i];
+        
+        button = (UIButton*)[secondWordsButtons objectAtIndex:i-indexofwords];
         [button setTitle:[secondWords objectAtIndex:i] forState:UIControlStateNormal];
     }
+    indexofwords = indexofwords+4;
+    progressLabel.text = [NSString stringWithFormat:@"%d/%d",indexofwords/4,firstWords.count/4];
+choosedButton1=-1;
+choosedButton2=-1;
 }
 
 - (void)viewDidUnload
@@ -85,6 +90,7 @@
     [self setSecondWordsButton2:nil];
     [self setSecondWordsButton3:nil];
     [self setSecondWordsButton4:nil];
+    [self setProgressLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -102,6 +108,177 @@
 - (IBAction)okButtonSelector:(id)sender {
     NSArray * controllers = self.navigationController.viewControllers;
     [self.navigationController popToViewController:[controllers objectAtIndex:2] animated:YES];
+}
+
+- (IBAction)buttonsToch:(UIButton*)sender {
+    if (choosedButton2==-1)
+    {
+        if (choosedButton1==-1)
+        {
+            choosedButton1 = [firstWordsButtons indexOfObject:sender];
+            if (choosedButton1<0||choosedButton1>3) {
+                choosedButton1 = -1;
+                choosedButton2 = [secondWordsButtons indexOfObject:sender];
+                for (UIButton * button in secondWordsButtons) {
+                    [button setEnabled:NO];
+                }
+            }
+            else {
+                for (UIButton * button in firstWordsButtons) {
+                    
+                    [button setEnabled:NO];    
+                                       
+                }
+            }
+        }
+        else {
+            
+            [UIButton animateWithDuration:0.5f animations:^{
+                sender.transform = CGAffineTransformMakeTranslation(225.0f, 0.0f);
+               
+            } completion:^(BOOL finished){
+                [sender setHidden:NO];
+                
+            }];
+            
+            
+            UIButton * button = [firstWordsButtons objectAtIndex:choosedButton1];
+            
+            [UIButton animateWithDuration:0.5f animations:^{
+                button.transform = CGAffineTransformMakeTranslation(-225.0f, 0.0f);
+                
+            } completion:^(BOOL finished){
+                [button setHidden:YES];
+                choosedButton1=-1;
+                choosedButton2=-1;
+                if (indexofwords<firstWords.count)
+                {
+                    int c = 0;
+                    for (int i=0; i<4; i++) 
+                    {
+                        UIButton * button = [firstWordsButtons objectAtIndex:i];
+                        if (button.hidden==YES) {
+                            c=c+1;
+                        }
+                        
+                    }
+                    if (c==4) {
+                        for (int i=indexofwords;i<indexofwords+4; i++) {
+                            
+                            UIButton * button = [firstWordsButtons objectAtIndex:i-indexofwords];
+                            [button setTitle:[firstWords objectAtIndex:i] forState:UIControlStateNormal];
+                            [UIButton animateWithDuration:0.5f animations:^{
+                                button.transform = CGAffineTransformIdentity;
+                            }completion:^(BOOL finished){
+                                [button setHidden:NO];
+                                
+                            }];
+                            
+                            button = [secondWordsButtons objectAtIndex:i-indexofwords];
+                            [button setTitle:[secondWords objectAtIndex:i] forState:UIControlStateNormal];
+                            [UIButton animateWithDuration:0.5f animations:^{
+                                button.transform = CGAffineTransformIdentity;
+                            }completion:^(BOOL finished){
+                                [button setHidden:NO];
+                                
+                            }] ;
+                            
+                        }
+                        indexofwords = indexofwords+4;
+                        progressLabel.text = [NSString stringWithFormat:@"%d/%d",indexofwords/4,firstWords.count/4];
+                        
+                    }
+                }
+                
+            }];
+            
+            for (UIButton * button in firstWordsButtons) {
+                [button setEnabled:YES];
+            }
+            for (UIButton * button in secondWordsButtons) {
+                [button setEnabled:YES];
+            }
+       
+            
+
+        }
+        
+    }
+    else {
+        if (choosedButton1==-1) {
+            choosedButton1 = [firstWordsButtons indexOfObject:sender];
+            
+            
+            [UIButton animateWithDuration:0.5f animations:^{
+                sender.transform = CGAffineTransformMakeTranslation(-225.0f, 0.0f);
+            
+            } completion:^(BOOL finished){
+                [sender setHidden:YES];
+                
+            }];
+            
+            UIButton * button = [secondWordsButtons objectAtIndex:choosedButton2];
+            
+            [UIButton animateWithDuration:0.5f animations:^{
+                button.transform = CGAffineTransformMakeTranslation(225.0f, 0.0f);
+                
+            } completion:^(BOOL finished){
+                [button setHidden:YES];
+                
+                choosedButton1=-1;
+                choosedButton2=-1;
+                if (indexofwords<firstWords.count)
+                {
+                    int c=0;
+                    for (int i=0; i<4; i++) {
+                        /*if (![button isHidden]) {
+                            c = YES;
+                        }*/
+                        UIButton * button = [secondWordsButtons objectAtIndex:i];
+                        if (button.hidden==YES) {
+                            c=c+1;
+                        }
+                    }
+                    if (c==4) {
+                        for (int i=indexofwords;i<indexofwords+4; i++) {
+                            UIButton * button = [firstWordsButtons objectAtIndex:i-indexofwords];
+                            [button setTitle:[firstWords objectAtIndex:i] forState:UIControlStateNormal];
+                            [UIButton animateWithDuration:0.5f animations:^{
+                                button.transform = CGAffineTransformIdentity;
+                            }completion:^(BOOL finished){
+                                [button setHidden:NO];
+                                
+                            }];
+                            
+                            button = [secondWordsButtons objectAtIndex:i-indexofwords];
+                            [button setTitle:[secondWords objectAtIndex:i] forState:UIControlStateNormal];
+                            [UIButton animateWithDuration:0.5f animations:^{
+                                button.transform = CGAffineTransformIdentity;
+                            }completion:^(BOOL finished){
+                                [button setHidden:NO];
+                                
+                            }] ;
+                            
+                        }
+                        indexofwords = indexofwords+4;
+                        progressLabel.text = [NSString stringWithFormat:@"%d/%d",indexofwords/4,firstWords.count/4];
+                        
+                    }
+                }
+            }];
+            
+            for (UIButton * button in firstWordsButtons) {
+                [button setEnabled:YES];
+            }
+            for (UIButton * button in secondWordsButtons) {
+                [button setEnabled:YES];
+            }
+            
+
+
+        }
+    }
+    
 }
 
 
