@@ -23,6 +23,7 @@
 @synthesize secondWordsButtons;
 @synthesize firstWords;
 @synthesize secondWords;
+@synthesize words;
 @synthesize firstWordsButton1;
 @synthesize firstWordsButton2;
 @synthesize firstWordsButton3;
@@ -56,9 +57,15 @@
     secondWordsButtons = [NSArray arrayWithObjects:secondWordsButton1,secondWordsButton2,secondWordsButton3,secondWordsButton4, nil];
     firstWords = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8", nil];
     secondWords = [NSArray arrayWithObjects:@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18", nil];
+    
+    words = [[NSMutableDictionary alloc] init];
+    
     for (int i=0; i<4; i++) {
-        [[firstWordsButtons objectAtIndex:i] setTitle:[firstWords objectAtIndex:i]];
-        [[secondWordsButtons objectAtIndex:i] setTitle:[secondWords objectAtIndex:i]];
+        UIButton * button = (UIButton*)[firstWordsButtons objectAtIndex:i];
+        [button setTitle:[firstWords objectAtIndex:i] forState:UIControlStateNormal];
+        //[[secondWordsButtons objectAtIndex:i] setTitle:[secondWords objectAtIndex:i]];
+        button = (UIButton*)[secondWordsButtons objectAtIndex:i];
+        [button setTitle:[secondWords objectAtIndex:i] forState:UIControlStateNormal];
     }
 }
 

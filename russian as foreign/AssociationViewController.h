@@ -19,6 +19,7 @@
 @property (nonatomic, retain) NSArray * secondWordsButtons;
 @property (nonatomic, retain) NSMutableArray * firstWords;
 @property (nonatomic, retain) NSMutableArray * secondWords;
+@property (nonatomic, retain) NSMutableDictionary * words;
 @property (weak, nonatomic) IBOutlet UIButton *firstWordsButton1;
 @property (weak, nonatomic) IBOutlet UIButton *firstWordsButton2;
 @property (weak, nonatomic) IBOutlet UIButton *firstWordsButton3;
