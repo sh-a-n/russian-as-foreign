@@ -57,7 +57,7 @@
     firstWordsButtons = [NSArray arrayWithObjects:firstWordsButton1,firstWordsButton2,firstWordsButton3,firstWordsButton4, nil];
     secondWordsButtons = [NSArray arrayWithObjects:secondWordsButton1,secondWordsButton2,secondWordsButton3,secondWordsButton4, nil];
     firstWords = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8", nil];
-    secondWords = [NSArray arrayWithObjects:@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18", nil];
+    secondWords = [NSArray arrayWithObjects:@"3",@"2",@"4",@"1",@"7",@"6",@"8",@"5", nil];
     
     words = [[NSMutableDictionary alloc] init];
     indexofwords = 0;
